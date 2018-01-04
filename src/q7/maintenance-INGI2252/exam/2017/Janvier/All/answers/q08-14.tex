@@ -10,6 +10,9 @@ Developing applications in that way saves of course time and therefore money. It
 \section{Explain the difference between economies of scale and economies of scope, in the context
 of software product lines.}
 
+
+\textbf{Economies of scale (resp scope)} : savings from using technology to produce a greater volume  of a single output (resp. greater diversity of outputs) with the same or less inputs.
+
 In factories, the \textbf{economies of scale} are possible because a lot of the same product has to be built. The factory is “super specialized” to build a specific product and is therefore very efficient.
 In software engineering, the \textbf{economies of scope} are possible when the goal of the applications is somehow the same. In that case, a software product line can be created, which allows the developers to implement only once the common set of features and to re-use that set to create multiple applications. \\
 
@@ -23,8 +26,8 @@ The main purpose of domain analysis is, for the developer, to \textbf{learn back
 The domain analysis’ process is divided into three basic phases:
 \begin{enumerate}
 \item \textbf{Context analysis}: the domain analyst interacts with users and domain experts to \textbf{establish the bounds of the domain}. He gathers sources of information and \textbf{defines the scope of the analysis} by identifying the primary inputs and outputs of software in the domain.
-\item \textbf{Domain modeling}: the domain analyst uses what he gathers from the context analysis to support the creation of a \textbf{domain model}. The domain model is reviewed by the user, domain expert, and requirements analyst. Such domain model can consist of several artifacts such as a feature model, a dictionary, an entity-relationship diagram, other diagrams, etc.
-\item \textbf{Architecture modeling}: using the domain model, the domain analyst produces an \textbf{architecture model}. This model should be reviewed by the domain expert, the requirements analyst and the software engineer (not the user). This architecture model \textbf{captures the overall structure of the implementation} of different software systems in the domain.
+\item \textbf{Domain modelling}: the domain analyst uses what he gathered from the context analysis to support the creation of a \textbf{domain model}. The domain model is reviewed by the user, domain expert, and requirements analyst. Such domain model can consist of several artifacts such as a feature model, a dictionary, an entity-relationship diagram, other diagrams, etc.
+\item \textbf{Architecture modelling}: using the domain model, the domain analyst produces an \textbf{architecture model}. This model should be reviewed by the domain expert, the requirements analyst and the software engineer (not the user). This architecture model \textbf{captures the overall structure of the implementation} of different software systems in the domain.
 \end{enumerate}
 
 \section{What is feature-oriented domain analysis? What is a feature?
@@ -32,13 +35,13 @@ How does this relate to software product lines?}
 
 \textbf{Feature-Oriented Domain Analysis} (FODA) is a particular domain analysis technique that focuses on the identification of prominent (=something you can’t miss) or distinctive features of software systems in a domain. With this technique, the developer can find the \textbf{commonalities} (what features are in common) and the \textbf{variabilities} (what features distinguish each software system).\\
 
-A feature is a (prominent or distinctive) \textbf{user-visible aspect, quality or characteristic of the domain}. It describes a mandatory, optional or alternative characteristic of these related systems.\\
+A \textbf{feature} is a (prominent or distinctive) \textbf{user-visible aspect, quality or characteristic of the domain}. It describes a mandatory, optional or alternative characteristic of these related systems.\\
 
 Domain analysis and more precisely Feature-Oriented Domain Analysis provides a \textbf{generic and reusable description of the requirements} of a class of systems. It defines what is common across all systems in that domain (which may lead to the creation of a software product line). That allows the developer to implement the common features as reusable components that may be reused across different systems.
 
-\section{Explain and illustrate the feature modeling notation on a simple example.}
+\section{Explain and illustrate the feature modelling notation on a simple example.}
 
-Feature modeling is used in domain analysis and software product lines to express the commonalities and variabilities of a family of systems in terms of features they may offer. It consists of a hierarchy of features.\\
+Feature modelling is used in domain analysis and software product lines to express the commonalities and variabilities of a family of systems in terms of features they may offer. It consists of a hierarchy of features.\\
 
 \textbf{Mandatory features = must have}\\
 \textbf{Optional features = may or may not have}\\
@@ -60,7 +63,7 @@ A \textbf{valid configuration} is a configuration that \textbf{respects the sema
 An \textbf{inconsistent feature model} is a feature model which does not have any valid configuration.
 
 
-\section{Explain, in the context of feature modeling, the notions of commonality and variability.}
+\section{Explain, in the context of feature modelling, the notions of commonality and variability.}
 
-In the context of feature modeling, a \textbf{commonality} is a feature that appears in all of the feature model’s valid configuration. That feature can’t be taken out, it must be there. \\
+In the context of feature modelling, a \textbf{commonality} is a feature that appears in all of the feature model’s valid configuration. That feature can’t be taken out, it must be there. \\
 On the other hand, a \textbf{variability} is a feature that appears only in some of the valid configurations. 
