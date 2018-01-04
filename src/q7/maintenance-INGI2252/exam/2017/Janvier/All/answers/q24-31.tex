@@ -121,7 +121,7 @@ where the bug is located
 \item Refactor during code reviews
 \item bonus :\\
 \begin{itemize}
-\item Refactoring also fits naturally in the agile methodsphilosophy 
+\item Refactoring also fits naturally in the agile method philosophy 
 \item Refactoring is needed to address the principle "Maintain 
 simplicity". Wherever possible, actively work to eliminate complexity from the system by refactoring the code
 \end{itemize}
@@ -132,12 +132,13 @@ simplicity". Wherever possible, actively work to eliminate complexity from the s
 \item When the existing code is such a mess that although you could refactor it, it would be easier to rewrite everything from scratch instead. 
 \item When you are too close to a deadline because the productivity gain would appear after the deadline and thus be too late. 
 \end{itemize}
-However,you should never put off refactoring (if not too close frome deadline) because you don’t have the time. Not having enough time usually is a sign that refactoring is needed.
+However, you should never put off refactoring (if not too close from deadline) because you don’t have the time. Not having enough time usually is a sign that refactoring is needed.
+
 \section{Like refactoring, performance optimisation does not usually change the behaviour of the code
 (other than its speed); it only alters the internal structure. So how does it differ from refactoring
 then?}
 
-Refactoring typically changes no functionality, it simply changes the code's form to make the code more understandable and maintainable, e.g. by hiding parts of it behind interfaces in order to make it exchangable.
+Refactoring typically changes no functionality, it simply changes the code's form to make the code more understandable and maintainable, e.g. by hiding parts of it behind interfaces in order to make it exchangeable.
 \\
 Optimization typically changes the performance of a functionality, e.g. making execution faster or memory footprint smaller.\\
 Refactoring is not performance optimization. However, a peculiar indirect side effect of refactoring is probably more efficient resource usage.
@@ -247,7 +248,7 @@ The purpose here is quite simple : group parameters that belong together in a se
 
 \section{Give a concrete example of how a refactoring could accidentally reduce quality.}
 
-When we don't know what we are doing and when refactoring is not applied correctly, it can decrease the quality of the code. For exemple, going too deep in the abstraction.\\
+When we don't know what we are doing and when refactoring is not applied correctly, it can decrease the quality of the code. For example, going too deep in the abstraction.\\
 Refactoring should remove bad smells and not add new ones.
 
 \textbf{Example}: Too abstract class
@@ -259,7 +260,7 @@ Refactoring should remove bad smells and not add new ones.
 \end{figure}
 \FloatBarrier{}
 
-\section{Give an example of how to independently applied refactorings could accidentally introduce a
+\section{Give an example of how two independently applied refactorings could accidentally introduce a
 subtle merge conflict.}
 
 \begin{figure}[!ht]

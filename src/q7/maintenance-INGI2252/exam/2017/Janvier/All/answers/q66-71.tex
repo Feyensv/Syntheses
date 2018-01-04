@@ -149,14 +149,14 @@ How does MediaGeniX automate its testing process?
 What is the (positive and negative) impact of tests on maintenance?}
 
 It is very important for them and used to garantee that their software keeps on running when changes are made to the code. 
-WIth manual testing, they should do repetitive work (1,6 millions lines of code testing and more than 30 customers to tests). So they use automated testing. They have more than 1300 TestCase classes (in JUnit or SUnit).
+With manual testing, they should do repetitive work (1,6 millions lines of code testing and more than 30 customers to tests). So they use automated testing. They have more than 1300 TestCase classes (in JUnit or SUnit).
 They do 
 \begin{itemize}
 \item \textbf{Acceptance tests : } Test the application logic from the point of view of an end user. No individual methods. Complete flow from user interface to database and back.
 \item \textbf{Typical scenario testing : } Set up initial data. Assert that the condition you are going to test is \emph{NOT} met. Do some stuff. Assert that the condition you are going to test \emph{IS} met.
 \item \textbf{Regression tests : } If someone inadvertently changes behavior, the tests should detect it.
 \end{itemize}
-Automated tests are crucial because you cannot manually test a large application. They have more than 20.000 automated tests (which takes 8hours to run). But they used parallel execution on 16 computers to get the results in 30 minutes.
+Automated tests are crucial because you cannot manually test a large application. They have more than 20.000 automated tests (which takes 8 hours to run). But they used parallel execution on 16 computers to get the results in 30 minutes.
 Automated testing demands extra works and represents 30\% of the total source code. So they have an impact on the development time (almost double the development time). Moreover, the tests need to be maintained. If a functionality changes, tests need to be changed.
 However, testing pay back in the long run. You write them once and you can reuse them many times.
 

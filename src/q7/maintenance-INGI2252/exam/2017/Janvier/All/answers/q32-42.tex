@@ -124,12 +124,14 @@ It is hard to understand such lists, which become contradictory and hard to use 
 
 We can use the \textit{Replace Parameter with Method} refactoring in order to correct it. This refactoring method says that instead of passing the value through a parameter, place the value-getting code inside the method.
 
+We can also use the \textit{Introduce parameter object} refactoring to shorten the length of the parameter list (Coupling multiple parameters in a object wrapper).
+ 
 \section{What’s the relation between the Long Parameter List bad smell and the Data Clumps bad
 smell?}
 
 The Data Clumps appears when different parts of the code contain identical groups of variables.\newline
 
-As with the Long Parameter List, we can use the The Introduce Parameter Object refactoring method. The Introduce Parameter Object groups the list of parameters  that naturally go together in an object.\newline
+As with the Long Parameter List, we can use the the \textit{Introduce Parameter Object} refactoring method. It groups the list of parameters  that naturally go together in an object.\newline
 
 If the data clumps are solved, it can solve the Long Parameter List in the same time because the data clumps in question may be the parameter of the Long Parameter List.
 
@@ -188,8 +190,8 @@ A problem related to bad use of inheritance could be a code duplication.
 If we have same expression in two sibling classes, we have three possible cases : 
 
 \begin{enumerate}
-\item It's a \textbf{same} code : the solution is to extract method and pull up the field
-\item It's a \textbf{similar} code : the solution is to extract method and use from template method
+\item It's the \textbf{same} code : the solution is to extract method and pull up the field
+\item It's a \textbf{similar} code : the solution is to extract method and use of a template method in the base class
 \item It's \textbf{different} algorithm : the solution is to substitute the algorithm
 \end{enumerate}
 

@@ -29,7 +29,7 @@ Counter-example : application frameworks
 
 \item[Heuristic D.42] \textbf{All base classes must be abstract classes.}
 
-This heuristic implies that all the roots of an inheritance three should be abstract, while only the leaves should be concrete.
+This heuristic implies that all the roots of an inheritance tree should be abstract, while only the leaves should be concrete.
 Teacher's point of view \\
 Intuition : methods overridden in the subclasses should be abstract in the superclass. \\
 Not necessarily true :
@@ -89,7 +89,7 @@ It is important to note that once an object of a class sends a message to an obj
 \item[Heuristic C.24] \textbf{ Minimize the amount of collaboration between a class
 and its collaborator, that is, the number of different messages sent.}
 
-It these heuristic are considered equal to the collaboration minimization heuristic (Heuristic C.22), the we would be implying that there is some break-event point between adding more message sends between classes and adding a new collaboration. For example, we might argue that rather than letting a method of the person class use a new alarm clock message, it might be better for the person class to collaborate with some entirely new class. This is never true, because the big hit in complexity for the uses relationship comes at the class level, not the object level. The fact that the person class is dependent on two classes rather than one is the overriding concern. The amount of coupling between the objects of a class is much smaller problem.
+If this heuristic is considered equal to the collaboration minimization heuristic (Heuristic C.22), then we would be implying that there is some break-event point between adding more message sends between classes and adding a new collaboration. For example, we might argue that rather than letting a method of the person class use a new alarm clock message, it might be better for the person class to collaborate with some entirely new class. This is never true, because the big hit in complexity for the uses relationship comes at the class level, not the object level. The fact that the person class is dependent on two classes rather than one is the overriding concern. The amount of coupling between the objects of a class is much smaller problem.
 
 \end{description}
 
@@ -102,7 +102,7 @@ The rationale behind this heuristic is one of reusability. An alarm clock might 
 
 \item[Heuristic A.3] \textbf{Minimize the number of messages in the protocol of a class.}
 
-The exact opposite of this heuristic is the claim is that is a class implementor can think of some operation for a class then someone will want to use it in the future.  Why not implement it ?
+The exact opposite of this heuristic is the claim that a class implementor can think of some operation for a class then someone will want to use it in the future.  Why not implement it ?
 The problem with large interfaces is that you can never find what you are looking for. This is a serious problem with reusability in general. Be keeping the interface minimal, we make the system easier to understand and the components easier to reuse.
 
 \item[Heuristic A.7] \textbf{A class should only use operations in the public interface of another class or have nothing to do with that class.}
